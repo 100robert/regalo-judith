@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felices 23 Primaveras Judith 🎉</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Contenedor de medusas animadas de fondo -->
+    <div class="jellyfish-container">
+        <div class="jellyfish jellyfish1"></div>
+        <div class="jellyfish jellyfish2"></div>
+        <div class="jellyfish jellyfish3"></div>
+    </div>
+
+    <!-- Pantalla de bienvenida -->
+    <section id="welcome-screen" class="section active">
+        <div class="tulip-decoration tulip-left-1"></div>
+        <div class="tulip-decoration tulip-right-1"></div>
+        
+        <div class="hero-container">
+            <div class="hero-image">Felices 23 primaveras Judith</div>
+            <button class="btn-continuar" onclick="nextSection()">Abrir tu regalo ✨</button>
+        </div>
+    </section>
+
+    <!-- Sección de mensaje principal -->
+    <section id="message-section" class="section">
+        <div class="tulip-decoration tulip-left-2"></div>
+        <div class="tulip-decoration tulip-right-2"></div>
+        
+        <div class="content-container">
+            <h2 class="section-title">Un mensaje especial para ti</h2>
+            
+            <div class="message-box">
+                <p>
+                  En este día especial, celebramos no solo tu cumpleaños, sino también la pasión y entrega con la que construyes tu camino en el trabajo social. 
+                  A través de tu formación y tu sensibilidad hacia los demás, demuestras una vocación genuina por transformar realidades y sembrar esperanza allí donde más se necesita.
+                </p>
+              
+                <p>
+                  Que este nuevo año de vida te traiga aprendizajes valiosos, la fuerza para superar cada reto académico y personal, 
+                  y la certeza de que todo esfuerzo cuenta en el propósito de servir y hacer del mundo un lugar más justo y humano.
+                </p>
+              
+                <p>
+                  Que estas <strong>23 primaveras</strong> marquen el inicio de una etapa llena de crecimiento, experiencias que te inspiren, 
+                  y la confianza de saber que tu camino apenas comienza, pero ya ilumina con tu compromiso y tu esencia única.
+                </p>
+              
+                <p >
+                  🌷 ¡Feliz cumpleaños y que sigas brillando con tu luz propia! 🌷
+                </p>
+              </div>
+              
+            
+            <button class="btn-continuar" onclick="nextSection()">Continuar →</button>
+        </div>
+    </section>
+
+    <!-- Sección de frases inspiradoras -->
+    <section id="quotes-section" class="section">
+        <div class="tulip-decoration tulip-corner-1"></div>
+        <div class="tulip-decoration tulip-corner-2"></div>
+        
+        <div class="content-container">
+            <h2 class="section-title">Palabras que inspiran</h2>
+            
+            <div class="quotes-carousel">
+                <div class="quote-card active">
+                    <p class="quote-text">"Una persona puede hacer la diferencia, así que todos deberían intentarlo."</p>
+                    <p class="quote-author">— John F. Kennedy</p>
+                </div>
+                
+                <div class="quote-card">
+                    <p class="quote-text">"En este mismo momento, hay personas a las que solo tú puedes llegar, y diferencias que solo tú puedes marcar en sus vidas."</p>
+                    <p class="quote-author">— Mike Dooley</p>
+                </div>
+                
+                <div class="quote-card">
+                    <p class="quote-text">"Si ayudo a una sola persona a tener esperanza, no habré vivido en vano."</p>
+                    <p class="quote-author">— Martin Luther King</p>
+                </div>
+                
+                <div class="quote-card">
+                    <p class="quote-text">"El trabajador social siempre busca el cambio, responde a él, y lo utiliza como oportunidad."</p>
+                    <p class="quote-author">— Ana Lima</p>
+                </div>
+                
+                <div class="quote-card">
+                    <p class="quote-text">"A medida que nos perdemos en el servicio de los demás, descubrimos nuestra propia vida y nuestra propia felicidad."</p>
+                    <p class="quote-author">— Dieter F. Uchtdorf</p>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button onclick="prevQuote()">← Anterior</button>
+                <button onclick="nextQuote()">Siguiente →</button>
+            </div>
+            
+            <button class="btn-continuar" onclick="nextSection()">Continuar →</button>
+        </div>
+    </section>
+
+    <!-- Sección interactiva de deseos -->
+    <section id="wishes-section" class="section">
+        <div class="tulip-decoration tulip-left-3"></div>
+        <div class="tulip-decoration tulip-right-3"></div>
+        
+        <div class="content-container">
+            <h2 class="section-title">Tus deseos para este año</h2>
+            
+            <div class="wishes-box">
+                <textarea id="wishes-input" placeholder="Escribe aquí tus deseos para este nuevo año..."></textarea>
+                <button onclick="saveWishes()">Guardar mis deseos 💫</button>
+                <p id="confirmation-message" style="display: none;">¡Tus deseos han sido guardados en tu corazón! 💫</p>
+            </div>
+            
+            <div class="final-message">
+                <p>✨ Que todos tus sueños se hagan realidad ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de presentación del dragón -->
+    <section id="dragon-section" class="section">
+        <div class="dragon-container">
+            <div class="dragon-message">
+                <h2 class="dragon-title">¡Deseo Guardado! ✨</h2>
+                <p class="dragon-subtitle">Tu deseo ha sido enviado al Univeso</p>
+            </div>
+            <div class="dragon-image-container">
+                <img src="images/dragon-playa.png" alt="Dragón en la playa" class="dragon-image">
+                <div class="dragon-glow"></div>
+                <div class="dragon-particles"></div>
+            </div>
+            <div class="dragon-final-message">
+                <p>🐉 Que este dragón mágico proteja tus sueños 🐉</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
